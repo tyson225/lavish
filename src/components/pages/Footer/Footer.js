@@ -7,7 +7,7 @@ import {
   FaInstagram,
   FaYoutube,
   FaTwitter,
-  FaLinkedin
+  FaLinkedin,
 } from 'react-icons/fa';
 import { MdFingerprint } from 'react-icons/md';
 
@@ -76,48 +76,43 @@ function Footer() {
               LAVISH
             </Link>
           </div>
-          <small className='website-rights'>LAVISH © 2020</small>
+          <small className='website-rights'>
+            LAVISH &copy; {new Date().getFullYear()}
+          </small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
               to='/'
               target='_blank'
-              aria-label='Facebook'
-            >
+              aria-label='Facebook'>
               <FaFacebook />
             </Link>
             <Link
               className='social-icon-link'
               to='/'
               target='_blank'
-              aria-label='Instagram'
-            >
+              aria-label='Instagram'>
               <FaInstagram />
             </Link>
             <Link
               className='social-icon-link'
-              to={
-                '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
-              }
+              to={'/'}
               target='_blank'
-              aria-label='Youtube'
-            >
+              aria-label='Youtube'>
               <FaYoutube />
             </Link>
             <Link
               className='social-icon-link'
               to='/'
               target='_blank'
-              aria-label='Twitter'
-            >
+              aria-label='Twitter'>
               <FaTwitter />
             </Link>
             <Link
               className='social-icon-link'
               to='/'
               target='_blank'
-              aria-label='LinkedIn'
-            >
+              aria-label='LinkedIn'>
               <FaLinkedin />
             </Link>
           </div>
